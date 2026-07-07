@@ -1,4 +1,4 @@
-# claude-code-discord-rpc
+# claudecode-discordrpc
 
 Discord Rich Presence for Claude Code — show what Claude is doing in real time.
 
@@ -46,13 +46,13 @@ Go to **Rich Presence > Art Assets** and upload all of these images (110x110 px,
 ### 2. Install
 
 ```bash
-npm install -g claude-code-discord-rpc
+npm install -g claudecode-discordrpc
 ```
 
 Or link locally:
 
 ```bash
-cd claude-code-discord-rpc
+cd claudecode-discordrpc
 npm install
 npm link
 ```
@@ -60,7 +60,7 @@ npm link
 ### 3. Configure & Install
 
 ```bash
-claude-code-discord-rpc install --client-id YOUR_DISCORD_CLIENT_ID
+claudecode-discordrpc install --client-id YOUR_DISCORD_CLIENT_ID
 ```
 
 This will:
@@ -71,7 +71,7 @@ This will:
 ### 4. Verify
 
 ```bash
-claude-code-discord-rpc doctor
+claudecode-discordrpc doctor
 ```
 
 This runs diagnostics and tells you if everything is set up correctly.
@@ -84,13 +84,13 @@ Once installed, start Claude Code as usual. Your Discord status will automatical
 
 | Command | Description |
 |---------|-------------|
-| `claude-code-discord-rpc install --client-id <id>` | Install hooks and start daemon |
-| `claude-code-discord-rpc uninstall` | Remove hooks and stop daemon |
-| `claude-code-discord-rpc start` | Start the daemon |
-| `claude-code-discord-rpc stop` | Stop the daemon |
-| `claude-code-discord-rpc status` | Show daemon and session status |
-| `claude-code-discord-rpc doctor` | Run diagnostics |
-| `claude-code-discord-rpc config set-client-id <id>` | Set Discord Client ID |
+| `claudecode-discordrpc install --client-id <id>` | Install hooks and start daemon |
+| `claudecode-discordrpc uninstall` | Remove hooks and stop daemon |
+| `claudecode-discordrpc start` | Start the daemon |
+| `claudecode-discordrpc stop` | Stop the daemon |
+| `claudecode-discordrpc status` | Show daemon and session status |
+| `claudecode-discordrpc doctor` | Run diagnostics |
+| `claudecode-discordrpc config set-client-id <id>` | Set Discord Client ID |
 
 ### Configuration
 
@@ -125,8 +125,8 @@ Discord Rich Presence (via @xhayper/discord-rpc)
 ## Development
 
 ```bash
-git clone https://github.com/your-username/claude-code-discord-rpc.git
-cd claude-code-discord-rpc
+git clone https://github.com/your-username/claudecode-discordrpc.git
+cd claudecode-discordrpc
 npm install
 npm run build
 ```
@@ -142,7 +142,7 @@ npm run build
 ## Uninstall
 
 ```bash
-claude-code-discord-rpc uninstall
+claudecode-discordrpc uninstall
 ```
 
 This removes all hooks from `~/.claude/settings.json` (only the ones added by this tool) and stops the daemon.
