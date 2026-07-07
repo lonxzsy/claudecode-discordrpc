@@ -1,0 +1,35 @@
+{
+  "name": "claude-code-discord-rpc",
+  "version": "1.0.0",
+  "description": "Discord Rich Presence for Claude Code — show what Claude is doing in real time",
+  "main": "dist/cli.js",
+  "bin": {
+    "claude-code-discord-rpc": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "claude-code",
+    "discord",
+    "discord-rpc",
+    "rich-presence",
+    "anthropic"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@xhayper/discord-rpc": "^1.0.18",
+    "chokidar": "^3.6.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.2.0",
+    "typescript": "^5.5.0"
+  }
+}
